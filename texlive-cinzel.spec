@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cinzel
 Version:	20140408
-Release:	3
+Release:	4
 Summary:	LaTeX support for Cinzel and Cinzel Decorative fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cinzel
