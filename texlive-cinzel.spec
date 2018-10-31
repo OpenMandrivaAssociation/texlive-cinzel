@@ -1,6 +1,6 @@
 Name:		texlive-cinzel
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	LaTeX support for Cinzel and Cinzel Decorative fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cinzel
