@@ -1,12 +1,12 @@
 Name:		texlive-cinzel
-Version:	20190228
+Version:	64550
 Release:	1
 Summary:	LaTeX support for Cinzel and Cinzel Decorative fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cinzel
 License:	OFL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.r64550.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.doc.r64550.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +23,12 @@ by the usual italic-selection commands in the package's LaTeX
 support.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +43,7 @@ support.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
