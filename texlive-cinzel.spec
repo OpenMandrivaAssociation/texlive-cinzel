@@ -3,7 +3,7 @@ Version:	64550
 Release:	2
 Summary:	LaTeX support for Cinzel and Cinzel Decorative fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/cinzel
+URL:		https://www.ctan.org/tex-archive/fonts/cinzel
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.doc.r%{version}.tar.xz
