@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.r%{tl_rev
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cinzel.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 Cinzel and Cinzel Decorative fonts, designed by Natanael Gama Natanael
@@ -23,3 +24,10 @@ Bold, Black). There are no italic fonts, but there are Decorative
 variants, which can be selected by the usual italic-selection commands
 in the package's LaTeX support.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from cinzel:
+Map cinzel.map
+TL_DROPIN_EOF
